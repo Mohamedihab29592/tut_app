@@ -90,3 +90,12 @@ class StoreDetails {
   StoreDetails(
       this.id, this.title, this.image, this.details, this.services, this.about);
 }
+
+class SearchDataModel{
+int id;
+String title;
+String image;
+
+SearchDataModel(this.id,this.title,this.image);
+
+}

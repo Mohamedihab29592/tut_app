@@ -16,3 +16,4 @@ class RegisterObject with _$RegisterObject {
       String password,
       String profilePicture) = _RegisterObject;
 }
+

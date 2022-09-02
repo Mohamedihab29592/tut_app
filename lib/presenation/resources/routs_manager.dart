@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:tut_app/presenation/main/pages/search/view/search_page.dart';
+import 'package:tut_app/presenation/main/pages/setting/contact_us.dart';
 import 'package:tut_app/presenation/resources/strings_manger.dart';
-
+import 'package:easy_localization/easy_localization.dart';
 import '../../app/di.dart';
 import '../forget_password/view/forgetPassword_view.dart';
 import '../login/view/login_view.dart';
@@ -18,6 +20,8 @@ class Routes {
   static const String forgotPasswordRoute = "/forgotPassword";
   static const String mainRoute = "/main";
   static const String storeDetailsRoute = "/storeDetails";
+  static const String searchRoute = "/search";
+  static const String contactUs = "/contactUs";
 }
 
 class RouteGenerator {
@@ -42,6 +46,13 @@ class RouteGenerator {
       case Routes.storeDetailsRoute:
         initStoreDetailsModule();
         return MaterialPageRoute(builder: (_) => const StoreDetailsView());
+      case Routes.contactUs:
+        initStoreDetailsModule();
+        return MaterialPageRoute(builder: (_) => const ContactUs());
+      case Routes.searchRoute:
+        initSearchModule();
+        return MaterialPageRoute(builder: (_) => const SearchPage());
+
       default:
         return unDefinedRoute();
     }
@@ -51,9 +62,9 @@ class RouteGenerator {
     return MaterialPageRoute(
         builder: (_) => Scaffold(
               appBar: AppBar(
-                title: const Text(AppStrings.noRouteFound),
+                title:  Text(AppStrings.noRouteFound.tr()),
               ),
-              body: const Center(child: Text(AppStrings.noRouteFound)),
+              body:  Center(child: Text(AppStrings.noRouteFound.tr())),
             ));
   }
 }

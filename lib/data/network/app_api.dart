@@ -31,5 +31,9 @@ abstract class AppServiceClient {
 
   @GET("/storeDetails/1")
   Future<StoreDetailsResponse> getStoreData();
+
+  @POST("/search")
+  Future<SearchDataResponse> search(
+      @Field("text") String text);
 }
 

@@ -43,7 +43,6 @@ Map<String, dynamic> _$ContactsResponseToJson(ContactsResponse instance) =>
       'email': instance.email,
       'link': instance.link,
     };
-
 AuthenticationResponse _$AuthenticationResponseFromJson(
     Map<String, dynamic> json) =>
     AuthenticationResponse(
@@ -185,4 +184,22 @@ Map<String, dynamic> _$StoreDetailsResponseToJson(
       'details': instance.details,
       'services': instance.services,
       'about': instance.about,
+    };
+SearchDataResponse _$SearchDataResponseFromJson(
+    Map<String, dynamic> json) =>
+    SearchDataResponse(
+      json['data'] as String,
+
+    )
+      ..status = json['status'] as int?
+      ..message = json['message'] as String?;
+
+Map<String, dynamic> _$SearchDataResponseToJson(
+   SearchDataResponse instance) =>
+    <String, dynamic>{
+      'status': instance.status,
+      'message': instance.message,
+      'id': instance.data,
+
+
     };

@@ -65,6 +65,8 @@ class LocalDataSourceImpl implements LocalDataSource {
   Future<void> saveStoreToCache(StoreDetailsResponse storeResponse) async {
     cacheMap[CACHE_STORE_DETAILS_KEY] = CachedItem(storeResponse);
   }
+
+
 }
 
 class CachedItem {

@@ -204,3 +204,19 @@ class StoreDetailsResponse extends BaseResponse {
   // toJson
   Map<String, dynamic> toJson() => _$StoreDetailsResponseToJson(this);
 }
+class SearchDataResponse extends BaseResponse {
+  @JsonKey(name:'data')
+  String data;
+
+
+
+ SearchDataResponse(this.data,);
+
+
+//fromJson
+  factory SearchDataResponse.fromJson(Map<String, dynamic> json) =>
+      _$SearchDataResponseFromJson(json);
+
+  // toJson
+  Map<String, dynamic> toJson() => _$SearchDataResponseToJson(this);
+}

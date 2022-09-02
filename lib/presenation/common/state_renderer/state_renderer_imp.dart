@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:tut_app/presenation/common/state_renderer/state_renderer.dart';
-
+import 'package:easy_localization/easy_localization.dart';
 import '../../../app/constants.dart';
 import '../../resources/strings_manger.dart';
 
@@ -21,7 +21,7 @@ class LoadingState extends FlowState {
       {required this.stateRendererType, String message = AppStrings.loading});
 
   @override
-  String getMessage() => message ?? AppStrings.loading.trim();
+  String getMessage() => message ?? AppStrings.loading.tr();
 
   @override
   StateRendererType getStateRendererType() => stateRendererType;

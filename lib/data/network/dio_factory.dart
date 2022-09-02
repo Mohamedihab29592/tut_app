@@ -16,9 +16,9 @@ class DioFactory {
   final AppPreferences _appPreferences;
 
   DioFactory(this._appPreferences);
+  Dio dio = Dio();
 
   Future<Dio> getDio() async {
-    Dio dio = Dio();
 int _TimeOut = 6*10000;
     String language = await _appPreferences.getAppLanguage();
     Map<String, String> headers = {
@@ -43,6 +43,9 @@ int _TimeOut = 6*10000;
       ));
     }
 
+
     return dio;
   }
+
+
 }

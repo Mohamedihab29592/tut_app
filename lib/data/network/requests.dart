@@ -16,3 +16,4 @@ class RegisterRequest {
   RegisterRequest(this.userName, this.countryMobileCode, this.mobileNumber,
       this.email, this.password, this.profilePicture);
 }
+

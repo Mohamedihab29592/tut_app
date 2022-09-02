@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:easy_localization/easy_localization.dart';
 import '../../../../../app/di.dart';
 import '../../../../../domain/models/models.dart';
 import '../../../../common/state_renderer/state_renderer_imp.dart';
@@ -23,16 +23,11 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
 
   final HomeViewModel _viewModel = instance<HomeViewModel>();
-
   _bind() {
     _viewModel.start();
   }
 
-  @override
-  void initState() {
-    _bind();
-    super.initState();
-  }
+
 
 
 
@@ -62,9 +57,9 @@ class _HomePageState extends State<HomePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               _getBannerWidget(snapshot.data?.banners),
-              _getSection(AppStrings.services),
+              _getSection(AppStrings.services.tr()),
               _getServicesWidget(snapshot.data?.services),
-              _getSection(AppStrings.stores),
+              _getSection(AppStrings.stores.tr()),
               _getStoresWidget(snapshot.data?.stores),
             ],
           );
@@ -210,5 +205,11 @@ class _HomePageState extends State<HomePage> {
   void dispose() {
     _viewModel.dispose();
     super.dispose();
+  }
+
+  @override
+  void initState() {
+    _bind();
+    super.initState();
   }
 }

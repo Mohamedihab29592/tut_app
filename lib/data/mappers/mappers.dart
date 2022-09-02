@@ -108,3 +108,10 @@ extension StoreDetailsResponseMapper on StoreDetailsResponse? {
         this?.about?.orEmpty() ?? Constants.empty);
   }
 }
+
+
+extension SearchDataResponseMapper on SearchDataResponse? {
+  String toDomain() {
+    return this?.data.orEmpty()??Constants.empty;
+  }
+}

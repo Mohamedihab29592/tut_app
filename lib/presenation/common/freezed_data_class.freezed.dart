@@ -1,3 +1,5 @@
+
+
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -27,8 +29,8 @@ mixin _$LoginObject {
 /// @nodoc
 abstract class $LoginObjectCopyWith<$Res> {
   factory $LoginObjectCopyWith(
-          LoginObject value, $Res Function(LoginObject) then) =
-      _$LoginObjectCopyWithImpl<$Res>;
+      LoginObject value, $Res Function(LoginObject) then) =
+  _$LoginObjectCopyWithImpl<$Res>;
   $Res call({String userName, String password});
 }
 
@@ -49,11 +51,11 @@ class _$LoginObjectCopyWithImpl<$Res> implements $LoginObjectCopyWith<$Res> {
       userName: userName == freezed
           ? _value.userName
           : userName // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
       password: password == freezed
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ));
   }
 }
@@ -62,8 +64,8 @@ class _$LoginObjectCopyWithImpl<$Res> implements $LoginObjectCopyWith<$Res> {
 abstract class _$$_LoginObjectCopyWith<$Res>
     implements $LoginObjectCopyWith<$Res> {
   factory _$$_LoginObjectCopyWith(
-          _$_LoginObject value, $Res Function(_$_LoginObject) then) =
-      __$$_LoginObjectCopyWithImpl<$Res>;
+      _$_LoginObject value, $Res Function(_$_LoginObject) then) =
+  __$$_LoginObjectCopyWithImpl<$Res>;
   @override
   $Res call({String userName, String password});
 }
@@ -87,17 +89,16 @@ class __$$_LoginObjectCopyWithImpl<$Res> extends _$LoginObjectCopyWithImpl<$Res>
       userName == freezed
           ? _value.userName
           : userName // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
       password == freezed
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ));
   }
 }
 
 /// @nodoc
-
 class _$_LoginObject implements _LoginObject {
   _$_LoginObject(this.userName, this.password);
 
@@ -134,7 +135,7 @@ class _$_LoginObject implements _LoginObject {
 
 abstract class _LoginObject implements LoginObject {
   factory _LoginObject(final String userName, final String password) =
-      _$_LoginObject;
+  _$_LoginObject;
 
   @override
   String get userName;
@@ -163,15 +164,15 @@ mixin _$RegisterObject {
 /// @nodoc
 abstract class $RegisterObjectCopyWith<$Res> {
   factory $RegisterObjectCopyWith(
-          RegisterObject value, $Res Function(RegisterObject) then) =
-      _$RegisterObjectCopyWithImpl<$Res>;
+      RegisterObject value, $Res Function(RegisterObject) then) =
+  _$RegisterObjectCopyWithImpl<$Res>;
   $Res call(
       {String userName,
-      String countryMobileCode,
-      String mobileNumber,
-      String email,
-      String password,
-      String profilePicture});
+        String countryMobileCode,
+        String mobileNumber,
+        String email,
+        String password,
+        String profilePicture});
 }
 
 /// @nodoc
@@ -196,27 +197,27 @@ class _$RegisterObjectCopyWithImpl<$Res>
       userName: userName == freezed
           ? _value.userName
           : userName // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
       countryMobileCode: countryMobileCode == freezed
           ? _value.countryMobileCode
           : countryMobileCode // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
       mobileNumber: mobileNumber == freezed
           ? _value.mobileNumber
           : mobileNumber // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
       email: email == freezed
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
       password: password == freezed
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
       profilePicture: profilePicture == freezed
           ? _value.profilePicture
           : profilePicture // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ));
   }
 }
@@ -225,16 +226,16 @@ class _$RegisterObjectCopyWithImpl<$Res>
 abstract class _$$_RegisterObjectCopyWith<$Res>
     implements $RegisterObjectCopyWith<$Res> {
   factory _$$_RegisterObjectCopyWith(
-          _$_RegisterObject value, $Res Function(_$_RegisterObject) then) =
-      __$$_RegisterObjectCopyWithImpl<$Res>;
+      _$_RegisterObject value, $Res Function(_$_RegisterObject) then) =
+  __$$_RegisterObjectCopyWithImpl<$Res>;
   @override
   $Res call(
       {String userName,
-      String countryMobileCode,
-      String mobileNumber,
-      String email,
-      String password,
-      String profilePicture});
+        String countryMobileCode,
+        String mobileNumber,
+        String email,
+        String password,
+        String profilePicture});
 }
 
 /// @nodoc
@@ -261,33 +262,32 @@ class __$$_RegisterObjectCopyWithImpl<$Res>
       userName == freezed
           ? _value.userName
           : userName // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
       countryMobileCode == freezed
           ? _value.countryMobileCode
           : countryMobileCode // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
       mobileNumber == freezed
           ? _value.mobileNumber
           : mobileNumber // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
       email == freezed
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
       password == freezed
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
       profilePicture == freezed
           ? _value.profilePicture
           : profilePicture // ignore: cast_nullable_to_non_nullable
-              as String,
+      as String,
     ));
   }
 }
 
 /// @nodoc
-
 class _$_RegisterObject implements _RegisterObject {
   _$_RegisterObject(this.userName, this.countryMobileCode, this.mobileNumber,
       this.email, this.password, this.profilePicture);
