@@ -1,6 +1,6 @@
 # tut_app
 
-A new Flutter project with clean architecture MVVM.
+A new Flutter project with clean architecture and MVVM architecture.
 
 ## Getting Started
 
